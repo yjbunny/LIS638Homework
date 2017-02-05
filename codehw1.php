@@ -36,9 +36,9 @@ echo "Your change is: $dollar dollar(s), $quarter quarter(s), $dime dime(s), $ni
 
 $beer = 9;
 
-do {
+do { 
 	echo "$beer bottles of beer on the wall, $beer bottles of beer.<br>";
-	$beer--;
+	$beer--; // decrementing 
 	echo "Take one down, pass it around, $beer bottles of beer on the wall.<br>";
 	echo "<br>";
 } while ($beer >= 1);
