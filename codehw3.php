@@ -172,7 +172,7 @@ function coinToss($num) {
 				echo '<img src="https://webdevdbcourses.prattsi.org/~ylee60/tail.png" alt="Tail" width="60" height="60" /> ';
 				$b = $a; 
 				$i++; 
-				$j = 1; 
+				$j = 1; // reset j 
 			}
 			elseif ($a == 1) {  		
 				if ($a != $b) { // to count 1st 1 
