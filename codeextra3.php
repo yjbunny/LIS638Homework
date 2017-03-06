@@ -17,7 +17,8 @@
     		margin: auto;
     		width: 640px;
     		border: 1px solid #c0c5ce;
-    		padding: 20px;}
+    		padding: 20px;
+    		text-align: left;}
 		.button {
       		display: inline-block;
 			position: relative;
@@ -63,7 +64,7 @@
 
 <?php
 
-$dice_num = 8; //number of side of a dice 
+$dice_num = 6; //number of side of a dice 
 
 dice($dice_num); 
 
@@ -73,6 +74,12 @@ function dice($dice_num){
 	$rolled_2 = rand(1,$dice_num);
 	$case = 0; // to count # of cases, which the sum of two numbers equal to the sum of two rolled die 
 
+// error message for 1
+	if ($dice_num == 1) {
+	echo "Error! the number should be more than 1 <br>"; 
+	}
+
+	else {
 // intro
 	echo "Rolling two ". $dice_num . "-sided die: "; 
 	echo "You rolled a " . $rolled_1 . " and a " . $rolled_2 . "!<br><br>"; 
@@ -106,13 +113,14 @@ function dice($dice_num){
 // sum, probability, etc. 
 	echo "<br>"; 
 	echo '<div class = "center"> An '. $rolled_1 . " and ". $rolled_2 . " are rolled,
-	      which is a sum of ". ($rolled_1 + $rolled_2) . ". 
+	      which is a sum of ". ($rolled_1 + $rolled_2) . ". <br> 
 	      There are " . $case . " ways to obtain a sum of " . ($rolled_1 + $rolled_2) . 
 	      ": rolling one of " . join($red) . 
-	      ". So there are " . $case . " possibilities out of a total of " . ($dice_num * $dice_num) . " possible outcomes, 
-	       i.e. " . "$case / " . ($dice_num * $dice_num) . " = a probability of " .  $case / ($dice_num * $dice_num) . 
+	      ". <br> So there are " . $case . " possibilities out of a total of " . ($dice_num * $dice_num) . " possible outcomes, 
+	       i.e. " . "$case / " . ($dice_num * $dice_num) . " = a probability of " .  round(($case / ($dice_num * $dice_num)),5) . 
 	      " of obtaining a sum of " . ($rolled_1 + $rolled_2) . 
 	      ". </div><br>";
+}
 }
 ?>
 </body>
