@@ -151,6 +151,6 @@ function fromPiglatin($piglatin) {
 ?>
 </body>
 <footer>
-CREATED BY <a href=http://github.com/yjbunny>Youn Lee</a>, March 2017
+CREATED BY <a href=https://github.com/yjbunny/LIS638Homework/blob/master/codeextra2.php>Youn Lee</a>, March 2017
 </footer>
 </html>
