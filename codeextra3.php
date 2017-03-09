@@ -77,7 +77,7 @@ dice($dice_num);
 // dice function 
 function dice($dice_num){ 
 	echo '<div class = "box_1">';
-	echo '<a href = "webdevdbcourses.prattsi.org/~ylee60/codeextra3.php"><img class="middle" src="https://webdevdbcourses.prattsi.org/~ylee60/dice.jpg" alt="dice" height="80" /></a>';
+	echo '<a href = "http://webdevdbcourses.prattsi.org/~ylee60/codeextra3.php"><img class="middle" src="https://webdevdbcourses.prattsi.org/~ylee60/dice.jpg" alt="dice" height="80" /></a>';
 
 	$rolled_1 = rand(1,$dice_num); 
 	$rolled_2 = rand(1,$dice_num);
