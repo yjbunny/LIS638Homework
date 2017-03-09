@@ -135,6 +135,6 @@ function dice($dice_num){
 ?>
 </body>
 <footer>
-CREATED BY <a href=https://github.com/yjbunny/LIS638Homework/blob/master/codeextra3.php>Youn Lee</a>, March 2017
+CREATED BY <a href=https://github.com/yjbunny/LIS638Homework/blob/master/codeextra3.php target = "_blank">Youn Lee</a>, March 2017
 </footer>
 </html>
